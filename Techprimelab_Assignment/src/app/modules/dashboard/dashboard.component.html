@@ -1,0 +1,54 @@
+<div class="container-fluid page">
+  <div class="page__box p-3 mt-2">
+   Dashboard
+  </div>
+  <div class="page__content shadow p-3 position-relative">
+    <div class="row">
+      <div class="col-sm-3">
+        <div class="card border-primary">
+          <div class="card-body">
+            <h1 class="card-title">Total Projects</h1>
+            <p><b>{{totalproject}}</b></p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-sm-3">
+        <div class="card border-primary">
+          <div class="card-body">
+            <h1 class="card-title">Closed</h1>
+            <p><b>{{closedCount}}</b></p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-sm-3">
+        <div class="card border-primary">
+          <div class="card-body">
+            <h1 class="card-title">Running</h1>
+            <p><b>{{runningCount}}</b></p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-sm-3">
+        <div class="card border-primary">
+          <div class="card-body">
+            <h1 class="card-title">Cancelled</h1>
+            <p><b>{{CancelledCount}}</b></p>
+          </div>
+        </div>
+      </div>
+
+
+      <!-- chart  -->
+      <div class="col-md-6 py-2 chart ">
+        <div class="card ">
+            <div class="card-body">
+              <img [src]="'assets/image/barChartimg2.png'" alt="image" width='100%'>
+            </div>
+        </div>
+
+    </div>
+  </div>
+</div>

@@ -1,0 +1,36 @@
+.page {
+  color: white;
+  padding: 0 1rem;
+  background-color: #f1f5f9;
+}
+.page__box {
+  min-height: 150px;
+  background: #0755a2;
+  margin: 0 -1rem;
+  font-size: 25px;
+  display: flex;
+  align-items: center;
+}
+.page__content {
+  min-height: calc(100vh-150px);
+  background-color: white;
+  border-radius: 10px;
+  margin-top: -2rem;
+  color: black;
+}
+a {
+  color: white;
+  margin-left: 10px;
+  margin-right: 15px;
+}
+p{
+  font-size: 30px;
+}
+.card{
+  background-color: white;
+  border-radius:8px;
+}
+.chart{
+  margin-top: 15px;
+  padding: 2px;
+}

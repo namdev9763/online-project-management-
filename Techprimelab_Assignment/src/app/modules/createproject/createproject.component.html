@@ -1,0 +1,103 @@
+<div class="container-fluid page">
+    <div class="page__box p-3 mt-2">
+      <a mat-list-item href="/home/dashboard" class="list-item-active">
+        <mat-icon>keyboard_arrow_left</mat-icon>
+      </a>
+      Create Project
+    </div>
+    <div class="page__content shadow p-3 position-relative">
+      <div class="row g-3">
+        <div class="col-8">
+          <input type="text" class="form-control projectName" id="inputAddress" 
+          placeholder="Enter project Theme"  [(ngModel)]="project.projectname"/>
+        </div>
+        <div  class="col-4">
+           <button class="savebtn"  (click)="saveproject()"> Save Project</button>
+        </div>
+        <div class="col-md-4">
+          <label for="inputReason" class="form-label">Reason</label>
+          <select id="inputReason" class="form-select" [(ngModel)]="project.reason">
+            <option value="Business">Business</option>   
+            <option value="Dealership">Dealership</option>
+            <option value="Transport">Transport</option>
+          </select>
+        </div>
+        <div class="col-md-4">
+          <label for="inputType" class="form-label">Type</label>
+          <select id="inputType" class="form-select" [(ngModel)]="project.type">
+            <option value="Internal" >External</option>
+        <option value="External">Internal</option>
+        <option value=" Vendor"> Vendor</option>
+          </select>
+        </div>
+        <div class="col-md-4">
+          <label for="inputDivision" class="form-label">Division</label>
+          <select id="inputDivision" class="form-select"  [(ngModel)]="project.divison">
+            <option value="Compressor">Compressor</option>    
+            <option value="Filter">Filter</option>
+            <option value="Pumps">Pumps</option>
+            <option value="Glass">Glass</option>
+            <option value="Water Heater"> Water Heater</option>
+          </select>
+        </div>
+  
+        <div class="col-md-4">
+          <label for="inputCategory" class="form-label">Category</label>
+          <select id="inputCategory" class="form-select" [(ngModel)]="project.category">
+            <option value="Quality A">Quality A</option>    
+        <option value="Quality B">Quality B</option>
+        <option value="Quality C">Quality C</option>
+        <option value="Quality D">Quality D</option>
+          </select>
+        </div>
+        <div class="col-md-4">
+          <label for="inputPriority" class="form-label">Priority</label>
+          <select id="inputPriority" class="form-select" [(ngModel)]="project.priority">
+            <option value="High">High</option>    
+        <option value="Medium">Medium</option>
+        <option value="Low">Low</option>
+          </select>
+        </div>
+        <div class="col-md-4">
+          <label for="inputDepartement" class="form-label">Departement</label>
+          <select id="inputDepartement" class="form-select" [(ngModel)]="project.department" >
+            <option value=" Strategy"> Strategy</option>    
+        <option value="Finance">Finance</option>
+        <option value="Quality">Quality</option>
+        <option value="Maintenance">Maintenance</option>
+        <option value="Store">Store</option>
+        <option value="Store">HR</option>
+          </select>
+        </div>
+  
+        <div class="col-md-4">
+          <label for="inputStartDate" class="form-label">Start Date as per project Plan</label>
+          <input type="date" class="datepicker_input form-control"  [(ngModel)]="project.startdate" />
+        </div>
+        <div class="col-md-4">
+          <label for="inputEndDate" class="form-label">End Date as per project Plan</label>
+          <input type="date" class="datepicker_input form-control" [(ngModel)]="project.enddate" />
+        </div>
+  
+        <div class="col-md-4">
+          <label for="inputLocation" class="form-label">Location</label>
+          <select id="inputLocation" class="form-select" [(ngModel)]="project.location">
+            <option value=" Strategy"> Pune</option>    
+        <option value="Finance">Mumbai</option>
+        <option value="Quality">Delhi</option>
+        <option value="Maintenance">Bangalor</option>
+        <option value="Maintenance">Chennai</option>
+        <option value="Maintenance">Jaipur</option>
+        <option value="Maintenance">Beed</option>
+          </select>
+        </div>
+        <div > 
+            <label for="inputstatus" class="form-label labelrd">{{project.status}}</label>
+            
+          <label for="inputStatus" class="form-label labelstatus">Status: </label>
+          <!-- status: <b>{{project.status}}</b> -->
+        </div>
+      </div>
+      
+    </div>
+  </div>
